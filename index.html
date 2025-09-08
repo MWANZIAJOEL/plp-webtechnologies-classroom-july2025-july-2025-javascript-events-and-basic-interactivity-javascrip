@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Pages with JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🧠 Interactive Web Demo</h1>
+    <p>JavaScript Events | Interactive Features | Form Validation</p>
+  </header>
+
+  <main>
+    <!-- 🎉 Part 1: Event Handling -->
+    <section id="events">
+      <h2>🎉 Part 1: Event Handling</h2>
+      <button id="clickMeBtn">Click Me!</button>
+      <p id="clickMessage"></p>
+
+      <input type="text" id="hoverInput" placeholder="Hover or type here">
+      <p id="hoverMessage"></p>
+    </section>
+
+    <!-- 🎮 Part 2: Interactive Elements -->
+    <section id="interactive">
+      <h2>🎮 Part 2: Interactive Elements</h2>
+
+      <!-- Light/Dark Mode Toggle -->
+      <button id="toggleThemeBtn">🌙 Toggle Dark Mode</button>
+
+      <!-- Counter -->
+      <div id="counterBox">
+        <button id="decreaseBtn">➖</button>
+        <span id="counterValue">0</span>
+        <button id="increaseBtn">➕</button>
+      </div>
+
+      <!-- Collapsible FAQ -->
+      <div class="faq">
+        <h3 class="faq-question">What is JavaScript?</h3>
+        <p class="faq-answer">JavaScript is the language of the web that makes pages interactive!</p>
+      </div>
+    </section>
+
+    <!-- 📋✅ Part 3: Form Validation -->
+    <section id="formSection">
+      <h2>📋✅ Part 3: Form Validation</h2>
+      <form id="signupForm" novalidate>
+        <label>
+          Name:
+          <input type="text" id="name" required>
+          <small class="error" id="nameError"></small>
+        </label>
+
+        <label>
+          Email:
+          <input type="email" id="email" required>
+          <small class="error" id="emailError"></small>
+        </label>
+
+        <label>
+          Password:
+          <input type="password" id="password" required>
+          <small class="error" id="passwordError"></small>
+        </label>
+
+        <button type="submit">Sign Up</button>
+        <p id="formSuccess" class="success"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Interactive JS Assignment</p>
+  </footer>
+
+  <script src="script.jss"></script>
+</body>
+</html>
